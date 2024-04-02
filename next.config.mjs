@@ -1,4 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.google.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.gravatar.com',
+        port: '',
+      },
+    ],
+  },
+};
 
 export default nextConfig;
